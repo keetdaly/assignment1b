@@ -79,13 +79,21 @@ public class Demo {
         Student[] students = {john, mary, brian, emily, paul, ray};
 
         for (int i = 0; i < courses.length; i++) {
-            System.out.println(courses[i].getName() + "\n" + courses[i].getModules().toString() + "\n"
-                    + courses[i].getStudents().toString());
+            System.out.println(courses[i].getName());
+            for (Module m : courses[i].getModules()) {
+                System.out.println(m.getName());
+            }
+            for (Student s : courses[i].getStudents()) {
+                System.out.println(s.getName());
+            }
         }
 
         for (int j = 0; j < students.length; j++) {
-            System.out.println(students[j].getName() + "\n" + students[j].getUsername() + "\n" + students[j].getModules().toString()
-            + "\n" + students[j].getCourse().toString());
+            System.out.println(students[j].getName() + "\n" + students[j].getUsername() + "\n" + students[j].getCourse().getName());
+
+            for (Module m : students[j].getModules()) {
+                System.out.println(m.getName());
+            }
         }
     }
 }
