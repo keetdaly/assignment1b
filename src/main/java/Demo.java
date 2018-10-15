@@ -23,13 +23,19 @@ public class Demo {
         csitStudents.add(john);
         csitStudents.add(mary);
 
+        csit.setStudents(csitStudents);
+
         ArrayList<Student> engStudents = new ArrayList<Student>();
-        csitStudents.add(brian);
-        csitStudents.add(emily);
+        engStudents.add(brian);
+        engStudents.add(emily);
+
+        eng.setStudents(engStudents);
 
         ArrayList<Student> sciStudents = new ArrayList<Student>();
-        csitStudents.add(paul);
-        csitStudents.add(ray);
+        sciStudents.add(paul);
+        sciStudents.add(ray);
+
+        sci.setStudents(sciStudents);
 
         Module ma180 = new Module("Mathematics", "MA180");
         Module ee123 = new Module("Electronic Engineering", "EE123");
