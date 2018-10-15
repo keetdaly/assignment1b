@@ -14,11 +14,11 @@
             <url>https://jitpack.io</url>
         </repository>
     </repositories>
-
+    <dependencies>
     <dependency>
         <groupId>com.github.keetdaly</groupId>
         <artifactId>assignments</artifactId>
-        <version>-SNAPSHOT</version>
+        <version>8722aadefb</version>
     </dependency>
-
+    </dependencies>
 </project>
