@@ -64,7 +64,6 @@ public class Demo {
 
         sci.setModules(sciMods);
 
-
         ArrayList<Module> engMods = new ArrayList<Module>();
         engMods.add(ma310);
         engMods.add(ma180);
@@ -79,21 +78,26 @@ public class Demo {
         Student[] students = {john, mary, brian, emily, paul, ray};
 
         for (int i = 0; i < courses.length; i++) {
-            System.out.println(courses[i].getName());
+            System.out.println("----------------------\nCourse\n" + courses[i].getName());
+            System.out.println("\nModules");
             for (Module m : courses[i].getModules()) {
                 System.out.println(m.getName());
             }
+            System.out.println("\nStudents");
             for (Student s : courses[i].getStudents()) {
                 System.out.println(s.getName());
             }
         }
 
         for (int j = 0; j < students.length; j++) {
-            System.out.println(students[j].getName() + "\n" + students[j].getUsername() + "\n" + students[j].getCourse().getName());
+            System.out.println("----------------------\nName: " + students[j].getName() + "\nUsername: " + students[j].getUsername()
+                    + "\nCourse: " + students[j].getCourse().getName());
 
+            System.out.println("Modules");
             for (Module m : students[j].getModules()) {
                 System.out.println(m.getName());
             }
+            System.out.println("----------------------");
         }
     }
 }
